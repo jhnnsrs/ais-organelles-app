@@ -1,0 +1,43 @@
+[project]
+name = "ais-organelles-app"
+version = "0.1.0"
+description = "The AIS and the cisternal organelle inside it, segmented along a drawn PATH"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "arkitekt[all]>=13.1.0",
+    "dask[array]>=2026.8.0",
+    # The surfaces go up as mesh collections; fabriks brings trimesh and fast-simplification.
+    "fabriks>=3.0.1",
+    "mikro>=12.3.0",
+    # The two tables: mikro converts a DataFrame to parquet with these.
+    "pandas>=2.2",
+    "pyarrow>=12.0.1",
+    "pint>=0.24",
+    "scikit-image>=0.25",
+    "scipy>=1.14",
+    "xarray>=2026.9.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.14"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.semantic_release]
+version_variables = ["app.py:__version__"]
+commit_message = "chore(release): {version} [skip ci]"
+tag_format = "v{version}"
+allow_zero_version = true
+
+[tool.semantic_release.branches.release]
+match = "main"
+prerelease = false
+
+[tool.ruff.lint]
+extend-select = ["UP"]
+extend-ignore = ["UP037", "UP038", "UP042", "UP040", "UP046", "UP047", "UP049"]

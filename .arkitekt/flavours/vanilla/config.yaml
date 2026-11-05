@@ -1,0 +1,19 @@
+build_command:
+- docker
+- buildx
+- build
+- --platform
+- '{platform}'
+- '{output}'
+- -t
+- '{tag}'
+- -f
+- '{dockerfile}'
+- .
+capabilities: []
+description: CPU only; the AIS flight is numpy and scipy
+dockerfile: Dockerfile
+platforms:
+- linux/amd64
+- linux/arm64
+selectors: []
