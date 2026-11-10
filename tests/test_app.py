@@ -88,7 +88,7 @@ class StubLens:
         self.voxel_size = tuple(ns(axis=axis, size=float(size), unit="micrometer", type="SPACE") for axis, size in zip(SPACE, spacing))
 
     @property
-    def data(self):
+    def xarray_data(self):
         return xr.DataArray(da.from_array(self.store, chunks=(1, 16, 32, 32)), dims=list("czyx"))
 
     def axes_of_type(self, axis_type):
