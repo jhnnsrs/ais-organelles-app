@@ -1,5 +1,9 @@
 # ais-organelles-app
 
+<!-- arkitekt:badge -->
+[![Open in Arkitekt](https://arkitekt.live/img/badge/open-in-arkitekt.svg)](https://arkitekt.live/deeplink?orkestrator=%2Fdo%2Fv1%2Frepo.install%3Fsource%3Doci%253Aghcr.io%252Fjhnnsrs%252Fais-organelles-app)
+<!-- /arkitekt:badge -->
+
 The axon initial segment (AIS) and the cisternal organelle inside it, segmented along
 a drawn path. You trace a rough PATH along an axon in the orkestrator 3D scene and run
 **Segment AIS Tube Along Path** from the shape's card. You name two channels: the AIS

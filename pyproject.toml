@@ -5,11 +5,11 @@ description = "The AIS and the cisternal organelle inside it, segmented along a 
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
-    "arkitekt[all]>=13.1.0",
+    "arkitekt[all]>=14.1.0",
     "dask[array]>=2026.8.0",
     # The surfaces go up as mesh collections; fabriks brings trimesh and fast-simplification.
     "fabriks>=3.0.1",
-    "mikro>=12.3.0",
+    "mikro[xarray]>=13.0.0",
     # The two tables: mikro converts a DataFrame to parquet with these.
     "pandas>=2.2",
     "pyarrow>=12.0.1",

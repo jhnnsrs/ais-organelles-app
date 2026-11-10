@@ -230,7 +230,7 @@ def lens_volume(lens: Any, space_axes: tuple[str, ...], pinned: dict[str, int]) 
     Everything beside the space axes has to be a single position once `pinned`
     is applied, or the volume is refused rather than silently cut to its first plane.
     """
-    data = lens.data
+    data = lens.xarray_data
     data = data.isel({name: value for name, value in pinned.items() if name in data.dims})
     wide = {str(d): int(data.sizes[d]) for d in data.dims if d not in space_axes and data.sizes[d] > 1}
     if wide:
