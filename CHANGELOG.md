@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.0.4 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 17 and arkitekt-spec 11
+  ([`eb55a72`](https://github.com/jhnnsrs/ais-organelles-app/commit/eb55a72e7d3288d1491579e46cccb575d71ca204))
+
+
 ## v0.0.3 (2026-11-15)
 
 ### Bug Fixes
