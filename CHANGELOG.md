@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.0.2 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Arkitekt 16, on agent protocol 2
+  ([`4ab6a31`](https://github.com/jhnnsrs/ais-organelles-app/commit/4ab6a312dd89d59b630cebed3bf73b713d5459f8))
+
+
 ## v0.0.1 (2026-11-10)
 
 ### Bug Fixes
