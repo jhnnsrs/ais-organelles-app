@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.0.3 (2026-11-15)
+
+### Bug Fixes
+
+- **deps**: Rekuest 15.0.1 and arkitekt-runtime 10.0.1
+  ([`cdfee78`](https://github.com/jhnnsrs/ais-organelles-app/commit/cdfee78ece445c753fe58248719841c0d654f5d8))
+
+
 ## v0.0.2 (2026-11-15)
 
 ### Bug Fixes
