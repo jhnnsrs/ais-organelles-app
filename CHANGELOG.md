@@ -2,6 +2,19 @@
 
 <!-- version list -->
 
+## v0.0.5 (2026-11-16)
+
+### Bug Fixes
+
+- Bloks are self-contained <Blok kind context> trees
+  ([`0200bdd`](https://github.com/jhnnsrs/ais-organelles-app/commit/0200bdd0334da9fd1afd83f968c61cd055ed94b1))
+
+### Build System
+
+- Lock arkitekt 18
+  ([`cbb311f`](https://github.com/jhnnsrs/ais-organelles-app/commit/cbb311f6d622f282b0ab9d181b76d051700eb814))
+
+
 ## v0.0.4 (2026-11-15)
 
 ### Bug Fixes
