@@ -1,7 +1,8 @@
 """The app's logo, and the action's logo.
 
-The app's logo is a LOGO blok (an ``<AgentLogo>`` root), which a client shows beside the
-app's name. The action's logo is an ACTION_LOGO blok (an ``<ActionLogo>`` root), painted
+The app's logo is an agent logo blok (``<Blok kind="agent" context="logo">`` holding one
+``<Logo>``), which a client shows beside the app's name. The action's logo is an action logo
+blok (``<Blok kind="action" context="logo">``), painted
 only with the viewer's pens (``ink``, ``muted``, ``brand``, ``brand-strong``,
 ``brand-soft``, ``surface``), so it matches every other app's actions and follows the
 viewer's brand and dark mode. A shape that ``animate``s plays while the logo is hovered,
@@ -21,7 +22,8 @@ APP_LOGO = f"{APP}_logo"
 # inside it lie three cisternal organelles (synaptopodin, red), off the axis and in path
 # order, on the drawn path, which runs dashed through the segment.
 APP_LOGO_SOURCE = """
-<AgentLogo viewBox="0 0 64 64" title="ais-organelles-app">
+<Blok kind="agent" context="logo">
+<Logo viewBox="0 0 64 64" title="ais-organelles-app">
   <Rect x="0" y="0" width="64" height="64" rx="14" fill="ink" />
   <G stroke="muted" strokeLinecap="round" fill="none">
     <Path d="M12 41 Q9 35 4.5 32.5" strokeWidth="3" />
@@ -40,13 +42,15 @@ APP_LOGO_SOURCE = """
     <Ellipse cx="40.7" cy="29.3" rx="2.6" ry="1.35" transform="rotate(-47 40.7 29.3)" animate="pulse" animateDelay="0.4" />
   </G>
   <Rect x="0.5" y="0.5" width="63" height="63" rx="13.5" fill="none" stroke="muted" strokeOpacity="0.3" strokeWidth="1" />
-</AgentLogo>
+</Logo>
+</Blok>
 """
 
 ACTION_LOGOS: dict[str, str] = {
     # A tube round a dashed path, three organelles inside it, in path order.
     "segment_ais_tube_along_path": """
-<ActionLogo viewBox="0 0 24 24" title="Segment AIS Tube Along Path">
+<Blok kind="action" context="logo">
+<Logo viewBox="0 0 24 24" title="Segment AIS Tube Along Path">
   <Path d="M4 19 Q11 13 19.5 5" fill="none" stroke="ink" strokeWidth="7.5" strokeLinecap="round" />
   <Path d="M4 19 Q11 13 19.5 5" fill="none" stroke="surface" strokeWidth="4.5" strokeLinecap="round" />
   <Path d="M4 19 Q11 13 19.5 5" fill="none" stroke="brand" strokeWidth="1" strokeDasharray="1.4 1.4" strokeLinecap="round" animate="march" />
@@ -55,7 +59,8 @@ ACTION_LOGOS: dict[str, str] = {
     <Circle cx="11" cy="12" r="1.2" animate="pulse" animateDelay="0.2" />
     <Circle cx="16.6" cy="8.6" r="1.2" animate="pulse" animateDelay="0.4" />
   </G>
-</ActionLogo>
+</Logo>
+</Blok>
 """,
 }
 
