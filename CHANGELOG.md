@@ -2,6 +2,20 @@
 
 <!-- version list -->
 
+## v0.1.0 (2026-11-24)
+
+### Bug Fixes
+
+- Build on arkitekt 18.5.2, rekuest 18, arkitekt-spec 13 and mikro 14.2
+  ([`8344a96`](https://github.com/jhnnsrs/ais-organelles-app/commit/8344a965a0e943385a30221fcd69515d17fdabe9))
+
+### Features
+
+- A workbench panel that stages two channels, segments each drawn path into a scene and exports the
+  organelles
+  ([`a7dd388`](https://github.com/jhnnsrs/ais-organelles-app/commit/a7dd388d9fc2a68ad7a918721ad3612e14a8456b))
+
+
 ## v0.0.5 (2026-11-16)
 
 ### Bug Fixes
