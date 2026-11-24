@@ -40,6 +40,23 @@ The two channels need not share a grid. The organelle lens is read at the same w
 points through the drawn space. Only the box round the path, plus the blur's footprint,
 is read from each lens.
 
+## The panel
+
+Opened on a z-stack with at least two channels (the blok `ais_organelles_workbench`):
+
+1. Pick the AIS channel and the organelle channel and press **Show**. They open as a 3D
+   scene, the AIS green and the organelle magenta (**Stage Channels**). A pair that was
+   shown before gets its scene back, with the paths traced in it.
+2. Draw a path along an axon. It is segmented as soon as it is finished (**Segment AIS
+   Tube Into Scene**), and the run shows up on the right in a 3D scene of its own: both
+   channels cut to the box round the path, the AIS surface, the organelles and the
+   adjusted path, each a layer to switch on and off. Below it are the run's numbers and
+   its organelles. The Tune tab holds the parameters; **Segment the selected path again**
+   re-runs a path with them.
+3. **Export CSV** writes the organelles of every path traced in the scene, from the
+   latest run of each, to one CSV file in mikro (**Export Organelles**): a row per
+   organelle with its path. A path whose AIS holds no organelle adds no row.
+
 ## Outputs
 
 - the adjusted path (rewritten in place on a re-run, found through its lineage)
