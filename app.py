@@ -38,7 +38,7 @@ import pandas as pd
 import xarray as xr
 from arkitekt import App, Description, DescriptorOperator, Key, Provides, Requires, Task, run
 from arkitekt.widgets import StructurePicker
-from mikro import Mikro, mikro_service
+from mikro import Mikro
 from mikro.api.schema import (
     Annotation,
     AnnotationDerivedFromInput,
@@ -94,7 +94,6 @@ app = App(
     __version__,
     description="The AIS and the cisternal organelle inside it, segmented along a drawn path",
     author="jhnnsrs",
-    services=[mikro_service],
 )
 declare_logos(app)
 
