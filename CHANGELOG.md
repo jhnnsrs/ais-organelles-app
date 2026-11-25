@@ -2,6 +2,14 @@
 
 <!-- version list -->
 
+## v0.1.1 (2026-11-25)
+
+### Bug Fixes
+
+- Runs on arkitekt 19
+  ([`0e0162b`](https://github.com/jhnnsrs/ais-organelles-app/commit/0e0162bd283cfee164215d9a43d60af2d6c88128))
+
+
 ## v0.1.0 (2026-11-24)
 
 ### Bug Fixes

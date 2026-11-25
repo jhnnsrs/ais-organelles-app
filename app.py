@@ -84,7 +84,7 @@ from ais_organelles_app.placement import (
 )
 
 # The version of the app. A release is the commit tagged with it (v1.2.3).
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 SPACE = ("z", "y", "x")
 XYZ = ("x", "y", "z")
